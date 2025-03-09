@@ -1,12 +1,136 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Spring25\\PRU212\\Pru212_Project\\Pru212_Project\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|d:\\study\\project\\semester7\\pru212\\pru212_project\\pru212_project\\pru212_project\\assets\\scripts\\camerafollow_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|d:\\study\\project\\semester7\\pru212\\pru212_project\\pru212_project\\pru212_project\\assets\\scripts\\playermovement_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\assets\\scripts\\testscrpit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\testscrpit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraFollow_test.cs",
+              "DocumentMoniker": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\CameraFollow_test.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow_test.cs",
+              "ToolTip": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\CameraFollow_test.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollow_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:27:33.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMovement_test.cs",
+              "DocumentMoniker": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\PlayerMovement_test.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement_test.cs",
+              "ToolTip": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\PlayerMovement_test.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:23:59.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "testScrpit.cs",
+              "DocumentMoniker": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\testScrpit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\testScrpit.cs",
+              "ToolTip": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\testScrpit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\testScrpit.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T08:58:18.45Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1003,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1524,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
