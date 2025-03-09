@@ -64,7 +64,6 @@
     <Compile Include="Assets\Scripts\PlayerMovement_test.cs" />
     <Compile Include="Assets\Scripts\testScrpit.cs" />
     <Compile Include="Assets\Scripts\CameraFollow_test.cs" />
-    <Compile Include="Assets\Scripts\Environment\RandomTilemapGenerator.cs" />
     <Compile Include="Assets\Scripts\Environment\InfiniteGrid.cs" />
   </ItemGroup>
   <ItemGroup>

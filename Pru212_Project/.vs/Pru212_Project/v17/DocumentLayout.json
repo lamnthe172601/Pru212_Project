@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|d:\\study\\project\\semester7\\pru212\\pru212_project\\pru212_project\\pru212_project\\assets\\scripts\\environment\\infinitegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\infinitegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|d:\\study\\project\\semester7\\pru212\\pru212_project\\pru212_project\\pru212_project\\assets\\scripts\\environment\\randomtilemapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\randomtilemapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|d:\\study\\project\\semester7\\pru212\\pru212_project\\pru212_project\\pru212_project\\assets\\scripts\\camerafollow_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\assets\\scripts\\playermovement_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|d:\\study\\project\\semester7\\pru212\\pru212_project\\pru212_project\\pru212_project\\assets\\scripts\\environment\\infinitegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environment\\infinitegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\assets\\scripts\\camerafollow_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\assets\\scripts\\testscrpit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F449250B-1487-DE76-B477-6DAF72291322}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\testscrpit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\Environment\\RandomTilemapGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Environment\\RandomTilemapGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "InfiniteGrid.cs",
               "DocumentMoniker": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\Environment\\InfiniteGrid.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\InfiniteGrid.cs",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RandomTilemapGenerator.cs",
               "DocumentMoniker": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\Environment\\RandomTilemapGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Environment\\RandomTilemapGenerator.cs",
@@ -67,8 +67,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Environment\\RandomTilemapGenerator.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAcwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:50:51.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T17:50:51.201Z"
             },
             {
               "$type": "Document",
@@ -80,24 +79,24 @@
               "RelativeToolTip": "Assets\\Scripts\\CameraFollow_test.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:27:33.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T17:27:33.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PlayerMovement_test.cs",
               "DocumentMoniker": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\PlayerMovement_test.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement_test.cs",
               "ToolTip": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\PlayerMovement_test.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement_test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:23:59.416Z"
+              "WhenOpened": "2025-03-09T17:23:59.416Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "testScrpit.cs",
               "DocumentMoniker": "D:\\Study\\Project\\Semester7\\PRU212\\PRU212_Project\\Pru212_Project\\Pru212_Project\\Assets\\Scripts\\testScrpit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\testScrpit.cs",
