@@ -63,7 +63,8 @@ sysinfo.txt
 *.unitypackage
 *.unitypackage.meta
 *.app
-
+*.csproj.user
+*.sln.docstates
 # Crashlytics generated file
 crashlytics-build.properties
 
