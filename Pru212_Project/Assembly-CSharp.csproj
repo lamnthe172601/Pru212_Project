@@ -65,7 +65,9 @@
     <Compile Include="Assets\Scripts\testScrpit.cs" />
     <Compile Include="Assets\Scripts\CameraFollow_test.cs" />
     <Compile Include="Assets\Scripts\Gun\MoveGun.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Environment\InfiniteGrid.cs" />
+    <Compile Include="Assets\Explosion.cs" />
     <Compile Include="Assets\Scripts\Gun\PlayerBullet.cs" />
     <Compile Include="Assets\Scripts\PlayerMove\PlayerMove.cs" />
   </ItemGroup>
