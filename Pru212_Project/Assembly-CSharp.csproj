@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Environment\InfiniteGrid.cs" />
     <Compile Include="Assets\Explosion.cs" />
     <Compile Include="Assets\Scripts\Gun\PlayerBullet.cs" />
+    <Compile Include="Assets\Scripts\Gun\ChangeGun.cs" />
     <Compile Include="Assets\Scripts\PlayerMove\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
