@@ -61,13 +61,17 @@
     <Analyzer Include="D:\UnityFolder\6000.0.32f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerMovement_test.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
-    <Compile Include="Assets\Scripts\testScrpit.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow_test.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\Environment\CameraFollow_test.cs" />
+    <Compile Include="Assets\Scripts\PlayerMove\PlayerHealthController.cs" />
     <Compile Include="Assets\Scripts\Gun\MoveGun.cs" />
+    <Compile Include="Assets\Scripts\Gun\Bullet.cs" />
     <Compile Include="Assets\Scripts\Environment\InfiniteGrid.cs" />
+    <Compile Include="Assets\Explosion.cs" />
     <Compile Include="Assets\Scripts\Gun\PlayerBullet.cs" />
+    <Compile Include="Assets\Scripts\Gun\ChangeGun.cs" />
     <Compile Include="Assets\Scripts\PlayerMove\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>

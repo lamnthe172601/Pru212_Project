@@ -6,11 +6,13 @@ public class PlayerMove : MonoBehaviour
     private float moveSpeed = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer SpriteRenderer;
+    private Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,14 @@ public class PlayerMove : MonoBehaviour
         else
         {
             SpriteRenderer.flipX = false;
+        }
+        if(playerInput != Vector2.zero)
+        {
+            animator.SetBool("IsRun", true);
+        }
+        else
+        {
+            animator.SetBool("IsRun", false);
         }
     }
 }
