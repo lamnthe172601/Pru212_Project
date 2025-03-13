@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         // Find the player in the scene and set it as the target
-        target = FindObjectOfType<PlayerMovement_test>().transform;
+        target = FindObjectOfType<PlayerMove>().transform;
     }
 
     void Update()

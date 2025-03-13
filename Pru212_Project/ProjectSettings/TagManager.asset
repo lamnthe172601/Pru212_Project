@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3032074305
+    locked: 0
   - name: Player
     uniqueID: 1673803573
     locked: 0
@@ -51,6 +54,12 @@ TagManager:
     locked: 0
   - name: Gun
     uniqueID: 2901539383
+    locked: 0
+  - name: Enemy
+    uniqueID: 2461820595
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 391441705
     locked: 0
   m_RenderingLayers:
   - Default
