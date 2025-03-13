@@ -19,9 +19,8 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
-        // Follow the target if it's found
         if (target != null)
         {
             transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
