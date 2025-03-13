@@ -15040,6 +15040,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: bulletDamage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
       value: 
       objectReference: {fileID: 4266245808475327509, guid: bc7e1ff922fd6d249ab55860bd586875, type: 3}
@@ -16506,6 +16510,10 @@ PrefabInstance:
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletSpeed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: bulletDamage
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
