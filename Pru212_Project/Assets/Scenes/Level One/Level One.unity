@@ -15061,11 +15061,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.539
+      value: 0.236
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.371
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_Name
@@ -15197,11 +15197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.384
+      value: 0.182
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.932
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_Name
@@ -15627,6 +15627,7 @@ GameObject:
   - component: {fileID: 1370161146}
   - component: {fileID: 1370161147}
   - component: {fileID: 1370161148}
+  - component: {fileID: 1370161149}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -15820,6 +15821,21 @@ PolygonCollider2D:
       - {x: 0.5, y: 0.25}
       - {x: 0, y: 0.5625}
   m_UseDelaunayMesh: 0
+--- !u!114 &1370161149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370161140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 165a9229498f08344acabdb4b37527cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  cu: 0
+  hpBar: {fileID: 880749888}
 --- !u!4 &1389048509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7215602090413713620, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
@@ -16495,11 +16511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.63
+      value: 0.214
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 8209943040371179349, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_Size.x
