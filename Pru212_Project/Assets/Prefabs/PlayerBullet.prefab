@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -7395611198035244278}
   - component: {fileID: 4614395828730619524}
   - component: {fileID: -6855788149843951073}
+  - component: {fileID: -6894233790723027432}
   m_Layer: 0
   m_Name: PlayerBullet
   m_TagString: PlayerBullet
@@ -102,7 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef75f518909fe0a418434339a9adc9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
   timeDestroy: 0.5
 --- !u!50 &4614395828730619524
 Rigidbody2D:
@@ -177,3 +177,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.4, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &-6894233790723027432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266245808475327509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b6a1824371f954e8a105b3e855d0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

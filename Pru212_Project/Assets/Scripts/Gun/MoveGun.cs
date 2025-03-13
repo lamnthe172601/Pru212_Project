@@ -55,52 +55,28 @@ public class MoveGun : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && currentAmmo > 0 && Time.time > nextShot)
         {
             nextShot = Time.time + shotDelay;
-            GameObject bullet = Instantiate(bulletPrefabs, firePos.position, firePos.rotation);
-
             // Gán tốc độ cho đạn
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                rb.linearVelocity = firePos.right * bulletSpeed;
-            }
-
-            // Thiết lập hủy đạn sau khi đạt tầm bắn
-            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            currentAmmo--;
+            GameObject bullet = Instantiate(bulletPrefabs, firePos.position, firePos.rotation);
+            Bullet bulletScript = bullet.GetComponent<Bullet>(); // Lấy script Bullet gắn trên viên đạn
             if (bulletScript != null)
             {
-                bulletScript.SetRange(bulletRange, bullet.transform.position);
+                bulletScript.SetBulletSpeed(bulletSpeed);
+                bulletScript.SetBulletDamage(bulletDamage);
             }
-
-            currentAmmo--;
         }
     }
-
     void ReLoad()
     {
-        if (Input.GetMouseButtonDown(1) && currentAmmo < maxAmmo)
+        if (Input.GetKeyDown(KeyCode.Q) && currentAmmo < maxAmmo)
         {
             currentAmmo = maxAmmo;
         }
     }
+}
+
+    
 
     // Script xử lý hành vi của đạn trong cùng file
-    public class Bullet : MonoBehaviour
-    {
-        private Vector2 startPosition;
-        private float maxDistance;
+    
 
-        public void SetRange(float range, Vector3 startPos)
-        {
-            startPosition = startPos;
-            maxDistance = range;
-        }
-
-        void Update()
-        {
-            if (Vector2.Distance(startPosition, transform.position) >= maxDistance)
-            {
-                Destroy(gameObject); // Hủy đạn khi đạt tầm bắn
-            }
-        }
-    }
-}
