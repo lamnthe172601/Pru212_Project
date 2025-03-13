@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cannonBullet-removebg-preview_0: 1762126703457160246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
