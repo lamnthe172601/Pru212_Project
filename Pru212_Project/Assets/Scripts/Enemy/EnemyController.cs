@@ -88,64 +88,64 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    // Damage the player on collision
-    //    if (collision.gameObject.tag == "Player" && hitCounter <= 0f)
-    //    {
-    //        PlayerHealthController.instance.TakeDamage(damage);
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Damage the player on collision
+        if (collision.gameObject.tag == "Player" && hitCounter <= 0f)
+        {
+            PlayerHealthController.instance.TakeDame(damage);
 
-    //        // Reset hit counter to prevent immediate subsequent hits
-    //        hitCounter = hitWaitTime;
-    //    }
-    //}
+            // Reset hit counter to prevent immediate subsequent hits
+            hitCounter = hitWaitTime;
+        }
+    }
 
-    //public void TakeDamage(float damageToTake)
-    //{
-    //    // Si l'ennemi a d�j� �t� vaincu, ne faites rien
-    //    if (isDefeated)
-    //        return;
+    public void TakeDamage(float damageToTake)
+    {
+        // Si l'ennemi a d�j� �t� vaincu, ne faites rien
+        if (isDefeated)
+            return;
 
-    //    // R�duire la sant� de l'ennemi
-    //    health -= damageToTake;
+        // R�duire la sant� de l'ennemi
+        health -= damageToTake;
 
-    //    // V�rifier si la sant� tombe en dessous de z�ro et g�rer la mort de l'ennemi
-    //    if (health <= 0)
-    //    {
-    //        // Marquer l'ennemi comme vaincu
-    //        isDefeated = true;
+        // V�rifier si la sant� tombe en dessous de z�ro et g�rer la mort de l'ennemi
+        if (health <= 0)
+        {
+            // Marquer l'ennemi comme vaincu
+            isDefeated = true;
 
-    //        // Supprimer l'ennemi du jeu
-    //        Destroy(gameObject);
+            // Supprimer l'ennemi du jeu
+            Destroy(gameObject);
 
-    //        // Incr�menter le compteur d'ennemis vaincus
-    //        UIController.instance.IncrementEnemiesDefeated();
+            // Incr�menter le compteur d'ennemis vaincus
+            //UIController.instance.IncrementEnemiesDefeated();
 
-    //        // D�terminer si l'ennemi doit laisser tomber une pi�ce ou un coffre en fonction de la probabilit�
-    //        float random = Random.value;
+            // D�terminer si l'ennemi doit laisser tomber une pi�ce ou un coffre en fonction de la probabilit�
+            float random = Random.value;
 
-    //        if (random <= coinDropRate && random > chestDropRate)
-    //        {
-    //            LevelController.instance.SpawnExp(transform.position, experienceToGive);
-    //        }
-    //        else if (random <= chestDropRate)
-    //        {
-    //            LevelController.instance.SpawnChest(transform.position);
-    //        }
-    //    }
+            if (random <= coinDropRate && random > chestDropRate)
+            {
+                //LevelController.instance.SpawnExp(transform.position, experienceToGive);
+            }
+            else if (random <= chestDropRate)
+            {
+                //LevelController.instance.SpawnChest(transform.position);
+            }
+        }
 
-    //    // Afficher visuellement l'effet de d�g�ts
-    //    DamageController.instance.SpawnDamage(damageToTake, transform.position);
-    //}
+        // Afficher visuellement l'effet de d�g�ts
+        //DamageController.instance.SpawnDamage(damageToTake, transform.position);
+    }
 
-    //public void TakeDamage(float damageToTake, bool shouldKnockBack)
-    //{
-    //    // Apply damage and check for knockback
-    //    TakeDamage(damageToTake);
+    public void TakeDamage(float damageToTake, bool shouldKnockBack)
+    {
+        // Apply damage and check for knockback
+        TakeDamage(damageToTake);
 
-    //    if (shouldKnockBack == true)
-    //    {
-    //        knockBackCounter = knockBackTime;
-    //    }
-    //}
+        if (shouldKnockBack == true)
+        {
+            knockBackCounter = knockBackTime;
+        }
+    }
 }
