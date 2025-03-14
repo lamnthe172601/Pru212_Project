@@ -28,7 +28,10 @@ public class Bullet : MonoBehaviour
         // Xử lý va chạm và damage ở đây, ví dụ: giảm máu kẻ thù
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            
+            Debug.Log("Hit enemy");
+            collision.gameObject.GetComponent<EnemyController>().TakeDamage(damage);
+            Destroy(gameObject);
+
         }
     }
 }

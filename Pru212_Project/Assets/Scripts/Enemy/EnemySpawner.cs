@@ -64,8 +64,8 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        //if (PlayerHealthController.instance.gameObject.activeSelf)
-        //{
+        if (PlayerHealthController.instance.gameObject.activeSelf)
+        {
             // Ensure the player is active before continuing wave and spawn logic
             if (currentWave < waves.Count)
             {
@@ -90,7 +90,7 @@ public class EnemySpawner : MonoBehaviour
                     spawnedEnemies.Add(newEnemy);
                 }
             }
-        //}
+        }
         // Move the spawner position to the target (player)
         transform.position = target.position;
 
