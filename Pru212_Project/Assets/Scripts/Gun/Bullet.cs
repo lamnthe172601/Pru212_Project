@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         // Di chuyển viên đạn
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
     }
 
     // Có thể thêm phương thức va chạm hoặc xử lý damage tùy theo yêu cầu của game
