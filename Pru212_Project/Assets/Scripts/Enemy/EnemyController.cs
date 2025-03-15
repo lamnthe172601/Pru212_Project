@@ -36,10 +36,13 @@ public class EnemyController : MonoBehaviour
 
     private bool isDefeated = false;
 
+    private EnemyHealthController enemyHealthController;
     void Start()
     {
         // Find the player in the scene and set it as the target
         target = FindObjectOfType<PlayerMove>().transform;
+        enemyHealthController = GetComponent<EnemyHealthController>();
+        enemyHealthController.Hp = health;        
     }
 
     void Update()
@@ -92,9 +95,9 @@ public class EnemyController : MonoBehaviour
     {
         // Damage the player on collision
         if (collision.gameObject.tag == "Player" && hitCounter <= 0f)
-        {
-            PlayerHealthController.instance.TakeDame(damage);
-
+        {          
+            PlayerHealthController.instance.TakeDame(damage);           
+           
             // Reset hit counter to prevent immediate subsequent hits
             hitCounter = hitWaitTime;
         }
@@ -106,6 +109,7 @@ public class EnemyController : MonoBehaviour
         if (isDefeated)
             return;
 
+        enemyHealthController.TakeDame(damageToTake);
         // R�duire la sant� de l'ennemi
         health -= damageToTake;
 

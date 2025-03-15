@@ -4,14 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerHealthController : MonoBehaviour
+public class EnemyHealthController : MonoBehaviour
 {
     // Singleton instance.
-    public static PlayerHealthController instance;
+    public static EnemyHealthController instance;
 
     [SerializeField] private float hp = 100f;
+
     [SerializeField] private float cu;
     [SerializeField] private Image hpBar;
+
+    public float Hp { get => hp; set => hp = value; }
+    public float Cu { get => cu; set => cu = value; }
 
     void Awake()
     {
@@ -20,32 +24,32 @@ public class PlayerHealthController : MonoBehaviour
     void Start()
     {
 
-        cu = hp;
-        updateHp();
+        Cu = Hp;
+        updateHp();      
+
     }
 
     // Update is called once per frame
     void Update()
     {
+       
 
-    }  
+    }
 
     public void TakeDame(float dame)
     {
-        cu -= dame;
-        cu = Mathf.Max(cu, 0);
+        Cu -= dame;
+       
+        Cu = Mathf.Max(Cu, 0);
         updateHp();
-        if (cu <= 0)
-        {
-            Time.timeScale = 0;            
-        }
+       
     }
 
     public void updateHp()
     {
         if (hpBar != null)
         {
-            hpBar.fillAmount = cu / hp;
+            hpBar.fillAmount = Cu / Hp;
         }
     }
 
