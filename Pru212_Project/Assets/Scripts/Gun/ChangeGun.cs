@@ -8,6 +8,8 @@ public class ChangeGun : MonoBehaviour
     public GameObject[] guns;
     public GameObject gunHolder;
     public GameObject currentGun;
+    [SerializeField]
+    public GameObject player;
     void Start()
     {
         totalGuns = gunHolder.transform.childCount;
@@ -17,32 +19,47 @@ public class ChangeGun : MonoBehaviour
             guns[i] = gunHolder.transform.GetChild(i).gameObject;
             guns[i].SetActive(false);
         }
-        guns[0].SetActive(true);
-        currentGun = guns[0];
-        currentGunIndex = 0;
+
+        
+        if (player.name.Trim().Equals("PinkMan(Clone)"))
+        {
+            guns[0].SetActive(true);
+            currentGun = guns[0];
+        }else if(player.name.Trim().Equals("NinjaFrog(Clone)"))
+        {
+            guns[1].SetActive(true);
+            currentGun = guns[1];
+        }
+        else
+        {
+            guns[2].SetActive(true);
+            currentGun = guns[2];
+        }
+       
+        //currentGunIndex = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1))
-        {
-            if(currentGunIndex < totalGuns - 1)
-            {
-                guns[currentGunIndex].SetActive(false);
-                currentGunIndex++;
-                guns[currentGunIndex].SetActive(true);
-                currentGun = guns[currentGunIndex];
-            }
-            else
-            {
-                guns[currentGunIndex].SetActive(false);
-                currentGunIndex = 0;
-                guns[currentGunIndex].SetActive(true);
-                currentGun = guns[currentGunIndex];
-            }
+        //if(Input.GetMouseButtonDown(1))
+        //{
+        //    if(currentGunIndex < totalGuns - 1)
+        //    {
+        //        guns[currentGunIndex].SetActive(false);
+        //        currentGunIndex++;
+        //        guns[currentGunIndex].SetActive(true);
+        //        currentGun = guns[currentGunIndex];
+        //    }
+        //    else
+        //    {
+        //        guns[currentGunIndex].SetActive(false);
+        //        currentGunIndex = 0;
+        //        guns[currentGunIndex].SetActive(true);
+        //        currentGun = guns[currentGunIndex];
+        //    }
 
-        }
+        //}
         
     }
 }
