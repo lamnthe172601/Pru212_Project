@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveGun : MonoBehaviour
 {
@@ -14,10 +15,11 @@ public class MoveGun : MonoBehaviour
     [SerializeField] private float bulletSpeed = 10f; // Tốc độ đạn
     [SerializeField] private float bulletRange = 5f; // Tầm bắn
     [SerializeField] private float bulletDamage = 10f;
-
+    [SerializeField] private Text numBullet;
     void Start()
     {
         currentAmmo = maxAmmo;
+        numBullet.text = currentAmmo.ToString();
     }
 
     void Update()
@@ -25,6 +27,7 @@ public class MoveGun : MonoBehaviour
         RoteGun();
         Shoot();
         ReLoad();
+        numBullet.text = currentAmmo.ToString();
     }
 
     void RoteGun()
@@ -64,6 +67,7 @@ public class MoveGun : MonoBehaviour
                 bulletScript.SetBulletSpeed(bulletSpeed);
                 bulletScript.SetBulletDamage(bulletDamage);
             }
+
         }
     }
     void ReLoad()
