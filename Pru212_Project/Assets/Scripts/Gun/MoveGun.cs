@@ -68,7 +68,7 @@ public class MoveGun : MonoBehaviour
     }
     void ReLoad()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && currentAmmo < maxAmmo)
+        if (Input.GetKeyDown(KeyCode.E) && currentAmmo < maxAmmo)
         {
             currentAmmo = maxAmmo;
         }
