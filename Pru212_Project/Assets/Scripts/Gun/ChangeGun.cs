@@ -25,24 +25,24 @@ public class ChangeGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1))
-        {
-            if(currentGunIndex < totalGuns - 1)
-            {
-                guns[currentGunIndex].SetActive(false);
-                currentGunIndex++;
-                guns[currentGunIndex].SetActive(true);
-                currentGun = guns[currentGunIndex];
-            }
-            else
-            {
-                guns[currentGunIndex].SetActive(false);
-                currentGunIndex = 0;
-                guns[currentGunIndex].SetActive(true);
-                currentGun = guns[currentGunIndex];
-            }
+        //if(Input.GetMouseButtonDown(1))
+        //{
+        //    if(currentGunIndex < totalGuns - 1)
+        //    {
+        //        guns[currentGunIndex].SetActive(false);
+        //        currentGunIndex++;
+        //        guns[currentGunIndex].SetActive(true);
+        //        currentGun = guns[currentGunIndex];
+        //    }
+        //    else
+        //    {
+        //        guns[currentGunIndex].SetActive(false);
+        //        currentGunIndex = 0;
+        //        guns[currentGunIndex].SetActive(true);
+        //        currentGun = guns[currentGunIndex];
+        //    }
 
-        }
+        //}
         
     }
 }
