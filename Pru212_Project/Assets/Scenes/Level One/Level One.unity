@@ -1039,6 +1039,7 @@ GameObject:
   - component: {fileID: 1370161147}
   - component: {fileID: 1370161148}
   - component: {fileID: 1370161149}
+  - component: {fileID: 1370161150}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1247,6 +1248,19 @@ MonoBehaviour:
   hp: 100
   cu: 0
   hpBar: {fileID: 880749888}
+--- !u!114 &1370161150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370161140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691e86a06f91a4649ba8252247a9bbd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterY: {fileID: 1370161140}
 --- !u!4 &1389048509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7215602090413713620, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
@@ -1533,6 +1547,7 @@ MonoBehaviour:
   guns: []
   gunHolder: {fileID: 1571491959}
   currentGun: {fileID: 0}
+  player: {fileID: 1370161140}
 --- !u!1001 &1597940290
 PrefabInstance:
   m_ObjectHideFlags: 0
