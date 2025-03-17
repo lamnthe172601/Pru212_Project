@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -47,6 +47,11 @@ public class PlayerHealthController : MonoBehaviour
             Time.timeScale = 0;            
         }
     }
+    public void Heal(int amount)
+    {
+        Cu = Mathf.Min(cu + amount, Hp);
+        Debug.Log($"Hồi {amount} HP, máu hiện tại: {cu}");
+    }
 
     public void updateHp()
     {
@@ -55,5 +60,6 @@ public class PlayerHealthController : MonoBehaviour
             hpBar.fillAmount = Cu / Hp;
         }
     }
+
 
 }

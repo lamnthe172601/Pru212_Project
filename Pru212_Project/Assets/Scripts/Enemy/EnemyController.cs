@@ -35,6 +35,9 @@ public class EnemyController : MonoBehaviour
     private Transform target;
 
     private bool isDefeated = false;
+    public int xpDrop = 5;
+    public GameObject ExpPrefab;
+    public GameObject healthPickupPrefab;
 
     private EnemyHealthController enemyHealthController;
     void Start()
@@ -121,7 +124,7 @@ public class EnemyController : MonoBehaviour
 
             // Supprimer l'ennemi du jeu
             Destroy(gameObject);
-
+            DropLoot(); 
             // Incr�menter le compteur d'ennemis vaincus
             //UIController.instance.IncrementEnemiesDefeated();
 
@@ -142,6 +145,18 @@ public class EnemyController : MonoBehaviour
         //DamageController.instance.SpawnDamage(damageToTake, transform.position);
     }
 
+    private void DropLoot()
+    {
+        if (Random.value < 0.5f)
+        {
+            Instantiate(ExpPrefab, transform.position, Quaternion.identity);
+        }
+        
+        if (Random.value < 0.2f)
+        {
+            Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+        }
+    }
     public void TakeDamage(float damageToTake, bool shouldKnockBack)
     {
         // Apply damage and check for knockback

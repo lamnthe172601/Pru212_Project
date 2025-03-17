@@ -400,6 +400,9 @@ MonoBehaviour:
   knockBackTime: 0.5
   experienceToGive: 1
   coinDropRate: 0.5
+  xpDrop: 5
+  ExpPrefab: {fileID: 255611701065319752, guid: afeb36a40070c4d429048c6865d92e46, type: 3}
+  healthPickupPrefab: {fileID: 785267415936688867, guid: 52944a37c8f8f0a4a8fb7b133eb25c7a, type: 3}
 --- !u!114 &9100834660773139291
 MonoBehaviour:
   m_ObjectHideFlags: 0
