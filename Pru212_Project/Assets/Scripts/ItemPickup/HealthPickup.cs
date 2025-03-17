@@ -2,7 +2,18 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
-    public int healAmount = 20;
+    public int healAmount = 20; 
+   
+
+    private void Start()
+    {
+      
+    }
+
+    private void Update()
+    {
+       
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

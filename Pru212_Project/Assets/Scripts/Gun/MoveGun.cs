@@ -14,8 +14,10 @@ public class MoveGun : MonoBehaviour
 
     [SerializeField] private float bulletSpeed = 10f; // Tốc độ đạn
     [SerializeField] private float bulletRange = 5f; // Tầm bắn
-    [SerializeField] private float bulletDamage = 10f;
+    [SerializeField] private float bulletDamage = 10f; // Sát thương
+    [SerializeField] private int bulletCount = 1; // Số tia đạn
     [SerializeField] private Text numBullet;
+
     void Start()
     {
         currentAmmo = maxAmmo;
@@ -58,18 +60,26 @@ public class MoveGun : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && currentAmmo > 0 && Time.time > nextShot)
         {
             nextShot = Time.time + shotDelay;
-            // Gán tốc độ cho đạn
             currentAmmo--;
-            GameObject bullet = Instantiate(bulletPrefabs, firePos.position, firePos.rotation);
-            Bullet bulletScript = bullet.GetComponent<Bullet>(); // Lấy script Bullet gắn trên viên đạn
-            if (bulletScript != null)
-            {
-                bulletScript.SetBulletSpeed(bulletSpeed);
-                bulletScript.SetBulletDamage(bulletDamage);
-            }
 
+            // Tạo đạn theo số lượng nâng cấp
+            float spreadAngle = 10f; // Góc lệch giữa các viên đạn
+            for (int i = 0; i < bulletCount; i++)
+            {
+                float offsetAngle = (i - (bulletCount - 1) / 2f) * spreadAngle;
+                Quaternion bulletRotation = firePos.rotation * Quaternion.Euler(0, 0, offsetAngle);
+                GameObject bullet = Instantiate(bulletPrefabs, firePos.position, bulletRotation);
+                Bullet bulletScript = bullet.GetComponent<Bullet>();
+
+                if (bulletScript != null)
+                {
+                    bulletScript.SetBulletSpeed(bulletSpeed);
+                    bulletScript.SetBulletDamage(bulletDamage);
+                }
+            }
         }
     }
+
     void ReLoad()
     {
         if (Input.GetKeyDown(KeyCode.E) && currentAmmo < maxAmmo)
@@ -77,10 +87,18 @@ public class MoveGun : MonoBehaviour
             currentAmmo = maxAmmo;
         }
     }
+
+    // Tăng sát thương
+    public void IncreaseDamage()
+    {
+        bulletDamage += 2f;
+        Debug.Log($"Tăng sát thương: {bulletDamage}");
+    }
+
+    // Tăng số tia đạn
+    public void IncreaseBulletCount()
+    {
+        bulletCount++;
+        Debug.Log($"Tăng số tia đạn: {bulletCount}");
+    }
 }
-
-    
-
-    // Script xử lý hành vi của đạn trong cùng file
-    
-
