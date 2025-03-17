@@ -28,7 +28,10 @@ public class CharacterSelected : MonoBehaviour
         {
             NextPreBtnClick();
         }
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnPlayClick();
+        }
     }
     public void PreBtnClick()
     {
