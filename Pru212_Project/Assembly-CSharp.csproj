@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Environment\CameraFollow_test.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerExperience.cs" />
     <Compile Include="Assets\Scripts\Player\ChangeInstancePlayer.cs" />
     <Compile Include="Assets\Scripts\Health\EnemyHealthController.cs" />
     <Compile Include="Assets\CharacterSelected.cs" />
@@ -74,8 +75,10 @@
     <Compile Include="Assets\Scripts\Environment\InfiniteGrid.cs" />
     <Compile Include="Assets\Explosion.cs" />
     <Compile Include="Assets\Scripts\Gun\PlayerBullet.cs" />
+    <Compile Include="Assets\Scripts\ItemPickup\ExpPickup.cs" />
     <Compile Include="Assets\Scripts\Gun\ChangeGun.cs" />
     <Compile Include="Assets\Scripts\PlayerMove\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\ItemPickup\HealthPickup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
