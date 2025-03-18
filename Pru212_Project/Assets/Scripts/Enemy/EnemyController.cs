@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
 
@@ -94,17 +95,42 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    private Coroutine attackCoroutine; // Lưu trữ Coroutine tấn công
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Damage the player on collision
-        if (collision.gameObject.tag == "Player" && hitCounter <= 0f)
-        {          
-            PlayerHealthController.instance.TakeDame(damage);           
-           
-            // Reset hit counter to prevent immediate subsequent hits
-            hitCounter = hitWaitTime;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Bắt đầu tấn công liên tục nếu chưa có Coroutine đang chạy
+            if (attackCoroutine == null)
+            {
+                attackCoroutine = StartCoroutine(AttackPlayer(collision.gameObject));
+            }
         }
     }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Dừng tấn công khi Enemy không còn chạm vào Player
+            if (attackCoroutine != null)
+            {
+                StopCoroutine(attackCoroutine);
+                attackCoroutine = null;
+            }
+        }
+    }
+
+    private IEnumerator AttackPlayer(GameObject player)
+    {
+        while (player != null) // Chạy liên tục khi Enemy còn va chạm với Player
+        {
+            PlayerHealthController.instance.TakeDame(damage);
+            yield return new WaitForSeconds(1f); // Gây sát thương mỗi 1 giây
+        }
+    }
+
 
     public void TakeDamage(float damageToTake)
     {
