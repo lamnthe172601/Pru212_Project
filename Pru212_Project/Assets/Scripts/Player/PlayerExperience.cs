@@ -80,11 +80,12 @@ public class PlayerExperience : MonoBehaviour
     {
         switch (type)
         {
-            case 1: return "Tăng sát thương";
-            case 2: return "Tăng số tia đạn";
-            case 3: return "Tăng tốc độ chạy";
-            case 4: return "Hút tất cả Exp & Máu (Xác suất thấp)";
-            default: return "Nâng cấp không xác định";
+            case 1: return "Increase damage";
+            case 2: return "Increase bullet traces";
+            case 3: return "Increase running speed";
+            case 4: return "Absorb all Exp & HP";
+            default: return "Unknown upgrade";
+
         }
     }
 
