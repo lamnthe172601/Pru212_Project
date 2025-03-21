@@ -2,25 +2,31 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PlayerExperience : MonoBehaviour
 {
     [SerializeField] private int currentXP = 0;
     [SerializeField] private int xpToNextLevel = 100;
-    [SerializeField] private int level = 1;
+    [SerializeField] private int level = 0;
     [SerializeField] private Image xpBar;
     [SerializeField] private GameObject upgradePanel;
     [SerializeField] private List<Button> upgradeButtons;
     [SerializeField] private List<Image> upgradeIcons; // Danh sách ảnh nâng cấp
     [SerializeField] private List<TextMeshProUGUI> upgradeDescriptions; // Mô tả nâng cấp
     [SerializeField] private Sprite damageIcon, bulletIcon, speedIcon, magnetIcon; // Ảnh của từng nâng cấp
+    [SerializeField] private Text levelTxt;
 
     private List<int> availableUpgrades = new List<int> { 1, 2, 3, 4 };
+    private bool canClickUpgrade = false;
+
+
 
     public void GainXP(int amount)
     {
         currentXP += amount;
         UpdateXPBar();
+        levelTxt.text = level.ToString();
         CheckLevelUp();
     }
 
@@ -30,7 +36,8 @@ public class PlayerExperience : MonoBehaviour
         {
             currentXP -= xpToNextLevel;
             level++;
-            xpToNextLevel = Mathf.RoundToInt(xpToNextLevel * 1.5f);
+            
+            xpToNextLevel = Mathf.RoundToInt(xpToNextLevel * 1.2f);
             Time.timeScale = 0f;
             ShowUpgradeOptions();
         }
@@ -38,9 +45,12 @@ public class PlayerExperience : MonoBehaviour
 
     private void ShowUpgradeOptions()
     {
+        Time.timeScale = 0f;
         upgradePanel.SetActive(true);
-        List<int> chosenUpgrades = GetRandomUpgrades(3);
+        canClickUpgrade = false; // Chặn click ngay khi bảng xuất hiện
+        StartCoroutine(EnableUpgradeSelection()); // Kích hoạt lại sau 0.5 giây
 
+        List<int> chosenUpgrades = GetRandomUpgrades(3);
         for (int i = 0; i < upgradeButtons.Count; i++)
         {
             int upgradeType = chosenUpgrades[i];
@@ -51,6 +61,13 @@ public class PlayerExperience : MonoBehaviour
             upgradeIcons[i].sprite = GetUpgradeIcon(upgradeType);
         }
     }
+
+    private IEnumerator EnableUpgradeSelection()
+    {
+        yield return new WaitForSecondsRealtime(1f); // Chờ 0.5 giây trước khi cho phép chọn
+        canClickUpgrade = true;
+    }
+
 
     private Sprite GetUpgradeIcon(int type)
     {
@@ -91,6 +108,8 @@ public class PlayerExperience : MonoBehaviour
 
     private void SelectUpgrade(int upgradeType)
     {
+        if (!canClickUpgrade) return; // Nếu chưa cho phép click, bỏ qua
+
         switch (upgradeType)
         {
             case 1:
@@ -110,6 +129,7 @@ public class PlayerExperience : MonoBehaviour
         upgradePanel.SetActive(false);
         Time.timeScale = 1f;
     }
+
 
     private void UpdateXPBar()
     {
