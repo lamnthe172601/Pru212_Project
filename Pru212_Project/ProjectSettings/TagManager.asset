@@ -8,6 +8,7 @@ TagManager:
   - Gun
   - Enemy
   - Collectible
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - Bullet
   - Gun
-  - 
+  - Enemy
   - 
   - 
   - 
