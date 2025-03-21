@@ -3028,6 +3028,8 @@ MonoBehaviour:
   gunHolder: {fileID: 1571491959}
   currentGun: {fileID: 0}
   player: {fileID: 1370161140}
+  gunSound: {fileID: 8300000, guid: 9af559ea29cdf37489229e138cc4d225, type: 3}
+  cannonSound: {fileID: 8300000, guid: a4c2de24dbf97834ba2697f0b113ded5, type: 3}
 --- !u!1 &1656539461
 GameObject:
   m_ObjectHideFlags: 0
