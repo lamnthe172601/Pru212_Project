@@ -810,11 +810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_Name
@@ -854,7 +854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8462033386147760433, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1267,12 +1267,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 165075127}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: shotDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletRange
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletSpeed
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
@@ -1294,13 +1298,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.089
       objectReference: {fileID: 0}
+    - target: {fileID: 5186869702050867316, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_Name
@@ -2017,52 +2025,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880749886}
   m_CullTransparentMesh: 1
---- !u!1 &926801427
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 926801428}
-  - component: {fileID: 926801429}
-  m_Layer: 0
-  m_Name: gun
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &926801428
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926801427}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1746503318}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &926801429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926801427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8202247043d2594193f9b73d8a066f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootSound: {fileID: 8300000, guid: 9af559ea29cdf37489229e138cc4d225, type: 3}
-  hitSound: {fileID: 8300000, guid: 47cc29d76e2cf53449325437ce8a7a88, type: 3}
 --- !u!1 &992918369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,6 +3245,8 @@ MonoBehaviour:
   gunHolder: {fileID: 1571491959}
   currentGun: {fileID: 0}
   player: {fileID: 1370161140}
+  gunSound: {fileID: 8300000, guid: 9af559ea29cdf37489229e138cc4d225, type: 3}
+  cannonSound: {fileID: 8300000, guid: a4c2de24dbf97834ba2697f0b113ded5, type: 3}
 --- !u!1 &1656539461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,7 +3415,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1758213432}
-  - {fileID: 926801428}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1758213431
@@ -3496,8 +3459,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1b6e1064789b50b46a71e76696842ad6, type: 3}
-  m_Resource: {fileID: 8300000, guid: 1b6e1064789b50b46a71e76696842ad6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3bfd1d96b0928d24d8e40195d1a589f8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3bfd1d96b0928d24d8e40195d1a589f8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4207,12 +4170,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 165075127}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: shotDelay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletRange
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletSpeed
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletDamage
@@ -4240,11 +4207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_TagString
@@ -4280,7 +4247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8462033386147760433, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
