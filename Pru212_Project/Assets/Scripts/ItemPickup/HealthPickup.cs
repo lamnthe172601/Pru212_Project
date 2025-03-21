@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
-    public int healAmount = 20; 
+    public int healAmount = 10; 
    
 
     private void Start()

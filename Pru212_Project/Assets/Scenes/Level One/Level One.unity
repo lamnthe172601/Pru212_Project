@@ -810,11 +810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_Name
@@ -854,7 +854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8462033386147760433, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1058,12 +1058,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 165075127}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: shotDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletRange
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletSpeed
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
@@ -1085,13 +1089,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.089
       objectReference: {fileID: 0}
+    - target: {fileID: 5186869702050867316, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_Name
@@ -3953,12 +3961,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 165075127}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
+      propertyPath: shotDelay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletRange
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletSpeed
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletDamage
@@ -3986,11 +3998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 5405745733864416824, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 5881935961982430214, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_TagString
@@ -4026,7 +4038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8462033386147760433, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

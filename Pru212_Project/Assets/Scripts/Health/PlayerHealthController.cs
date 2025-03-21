@@ -49,8 +49,9 @@ public class PlayerHealthController : MonoBehaviour
     }
     public void Heal(int amount)
     {
-        Cu = Mathf.Min(cu + amount, Hp);
-        Debug.Log($"Hồi {amount} HP, máu hiện tại: {cu}");
+        Cu += amount;
+        Cu = Mathf.Min(Cu, Hp);
+        updateHp();
     }
 
     public void updateHp()
