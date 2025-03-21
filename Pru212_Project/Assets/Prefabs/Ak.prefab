@@ -201,3 +201,9 @@ MonoBehaviour:
   shotDelay: 0.15
   maxAmmo: 24
   currentAmmo: 0
+  bulletSpeed: 10
+  bulletRange: 5
+  bulletDamage: 10
+  bulletCount: 1
+  numBullet: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 9af559ea29cdf37489229e138cc4d225, type: 3}
