@@ -173,12 +173,11 @@ public class EnemyController : MonoBehaviour
 
     private void DropLoot()
     {
-        if (Random.value < 0.5f)
+        if (Random.value < 0.3f)
         {
             Instantiate(ExpPrefab, transform.position, Quaternion.identity);
-        }
-        
-        if (Random.value < 0.2f)
+        } else       
+        if (Random.value < 0.1f)
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }

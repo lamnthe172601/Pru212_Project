@@ -786,7 +786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletDamage
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
@@ -2614,6 +2614,7 @@ MonoBehaviour:
   bulletIcon: {fileID: -1762907459416237984, guid: f37064fe1ea06fc4ebe5b1d3c6a25deb, type: 3}
   speedIcon: {fileID: 2061333004400763923, guid: 8182d8eed50ca18418f480886224f93d, type: 3}
   magnetIcon: {fileID: -3048828722804444929, guid: e887fc4c66712df4296eda2a669d4943, type: 3}
+  levelTxt: {fileID: 1793109580}
 --- !u!1 &1436776236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,7 +3973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletDamage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
