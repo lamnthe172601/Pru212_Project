@@ -18,13 +18,23 @@ public class MoveGun : MonoBehaviour
     [SerializeField] private int bulletCount = 1; // Số tia đạn
     [SerializeField] private Text numBullet;
 
-    [SerializeField] public AudioClip shootSound;//âm thanh
+    private AudioClip shootSound;//âm thanh
+    public AudioClip ShootSound
+    {
+        get => shootSound;
+        set => shootSound = value;
+    }
     private AudioSource audioSource;
     void Start()
     {
         currentAmmo = maxAmmo;
         numBullet.text = currentAmmo.ToString();
-        audioSource = gameObject.AddComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.playOnAwake = false;
     }
 
     void Update()
@@ -80,7 +90,7 @@ public class MoveGun : MonoBehaviour
                     bulletScript.SetBulletDamage(bulletDamage);
                 }
             }
-            PlaySound(shootSound);
+            PlaySound(ShootSound);
         }
     }
 

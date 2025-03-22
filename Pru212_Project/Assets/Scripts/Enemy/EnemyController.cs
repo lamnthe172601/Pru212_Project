@@ -41,6 +41,9 @@ public class EnemyController : MonoBehaviour
     public GameObject healthPickupPrefab;
 
     private EnemyHealthController enemyHealthController;
+
+    public GameObject deathEffect;
+    public float deathEffectDelay = 1f; // Thời gian hiệu ứng tồn tại trước khi bị hủy
     void Start()
     {
         // Find the player in the scene and set it as the target
@@ -56,23 +59,19 @@ public class EnemyController : MonoBehaviour
         {
             knockBackCounter -= Time.deltaTime;
 
-            // Reverse and increase move speed during knockback
             if (moveSpeed > 0)
             {
                 moveSpeed = -moveSpeed * 2f;
             }
 
-            // Reset move speed once knockback duration is over
             if (knockBackCounter <= 0)
             {
                 moveSpeed = Mathf.Abs(moveSpeed * 0.5f);
             }
         }
 
-        // Move towards the player
         rigidbody2d.linearVelocity = (target.position - transform.position).normalized * moveSpeed;
 
-        // Flip sprite depending on player's position
         FlipTowardsPlayer();
 
         // Reset hit counter after an attack
@@ -124,7 +123,7 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator AttackPlayer(GameObject player)
     {
-        while (player != null) // Chạy liên tục khi Enemy còn va chạm với Player
+        while (player != null) 
         {
             PlayerHealthController.instance.TakeDame(damage);
             yield return new WaitForSeconds(1f); // Gây sát thương mỗi 1 giây
@@ -134,27 +133,24 @@ public class EnemyController : MonoBehaviour
 
     public void TakeDamage(float damageToTake)
     {
-        // Si l'ennemi a d�j� �t� vaincu, ne faites rien
         if (isDefeated)
             return;
 
         enemyHealthController.TakeDame(damageToTake);
-        // R�duire la sant� de l'ennemi
         health -= damageToTake;
-
-        // V�rifier si la sant� tombe en dessous de z�ro et g�rer la mort de l'ennemi
         if (health <= 0)
         {
-            // Marquer l'ennemi comme vaincu
             isDefeated = true;
 
-            // Supprimer l'ennemi du jeu
+            if (deathEffect != null)
+            {
+                GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+                Destroy(effect, deathEffectDelay); // Hủy hiệu ứng sau một khoảng thời gian
+            }
+
             Destroy(gameObject);
             DropLoot(); 
-            // Incr�menter le compteur d'ennemis vaincus
-            //UIController.instance.IncrementEnemiesDefeated();
-
-            // D�terminer si l'ennemi doit laisser tomber une pi�ce ou un coffre en fonction de la probabilit�
+       
             float random = Random.value;
 
             if (random <= coinDropRate && random > chestDropRate)
@@ -167,8 +163,6 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        // Afficher visuellement l'effet de d�g�ts
-        //DamageController.instance.SpawnDamage(damageToTake, transform.position);
     }
 
     private void DropLoot()

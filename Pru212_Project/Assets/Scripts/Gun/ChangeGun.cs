@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ChangeGun : MonoBehaviour
 {
@@ -10,6 +10,10 @@ public class ChangeGun : MonoBehaviour
     public GameObject currentGun;
     [SerializeField]
     public GameObject player;
+
+    private MoveGun moveGunScript;
+    [SerializeField]  public AudioClip gunSound;
+    [SerializeField]  public AudioClip cannonSound;
     void Start()
     {
         totalGuns = gunHolder.transform.childCount;
@@ -20,12 +24,13 @@ public class ChangeGun : MonoBehaviour
             guns[i].SetActive(false);
         }
 
-        
+
         if (player.name.Trim().Equals("PinkMan(Clone)"))
         {
             guns[0].SetActive(true);
             currentGun = guns[0];
-        }else if(player.name.Trim().Equals("NinjaFrog(Clone)"))
+        }
+        else if(player.name.Trim().Equals("NinjaFrog(Clone)"))
         {
             guns[1].SetActive(true);
             currentGun = guns[1];
@@ -35,7 +40,18 @@ public class ChangeGun : MonoBehaviour
             guns[2].SetActive(true);
             currentGun = guns[2];
         }
-       
+
+        // Lấy MoveGun script từ currentGun
+        moveGunScript = currentGun.GetComponent<MoveGun>();
+        if (moveGunScript != null)
+        {
+            if (player.name.Trim().Equals("PinkMan(Clone)"))
+                moveGunScript.ShootSound = gunSound;
+            else if (player.name.Trim().Equals("NinjaFrog(Clone)"))
+                moveGunScript.ShootSound = cannonSound;
+            else
+                moveGunScript.ShootSound = gunSound;
+        }
         //currentGunIndex = 0;
     }
 
