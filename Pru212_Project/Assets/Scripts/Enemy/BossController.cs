@@ -34,7 +34,7 @@ public class BossController : MonoBehaviour
     public float thirdTimer;
     // Last known position of the player, used for AI behavior
     private Vector3 playerLastPosition;
-
+    private EnemyHealthController enemyHealthController;
 
     void Start()
     {
@@ -48,10 +48,13 @@ public class BossController : MonoBehaviour
         timer = 5f;
         secondTimer = 1f;
         thirdTimer = 2f;
-
-
+        
+        enemyHealthController = GetComponent<EnemyHealthController>();
+        enemyHealthController.enabled = true;
+        enemyHealthController.Hp = health;       
+        //enemyHealthController.Cu = health;
         gameObject.SetActive(false); // Ẩn boss ngay từ đầu
-        Invoke("EnableBoss", 60f); // Gọi hàm sau 5 phút
+        Invoke("EnableBoss", 0f); // Gọi hàm sau 5 phút
 
     }
     void EnableBoss()
@@ -97,7 +100,8 @@ public class BossController : MonoBehaviour
     {
         // Reduce boss health by the damage taken
         health -= damageToTake;
-
+        enemyHealthController.TakeDame(damageToTake);
+      
         // Check for boss death and handle accordingly
         if (health <= 0)
         {
@@ -112,17 +116,17 @@ public class BossController : MonoBehaviour
     }
 
     // Overloaded method to take damage with optional knockback
-    public void TakeDamage(float damageToTake, bool shouldKnockBack)
-    {
-        // Invoke damage taking and apply knockback if specified
-        TakeDamage(damageToTake);
+    //public void TakeDamage(float damageToTake, bool shouldKnockBack)
+    //{
+    //    // Invoke damage taking and apply knockback if specified
+    //    TakeDamage(damageToTake);
 
-        if (shouldKnockBack == true)
-        {
-            knockBackCounter = knockBackTime;
-            hitCounter = hitWaitTime;
-        }
-    }
+    //    if (shouldKnockBack == true)
+    //    {
+    //        knockBackCounter = knockBackTime;
+    //        hitCounter = hitWaitTime;
+    //    }
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

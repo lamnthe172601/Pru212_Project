@@ -9,7 +9,7 @@ public class EnemyHealthController : MonoBehaviour
     // Singleton instance.
     public static EnemyHealthController instance;
 
-    [SerializeField] private float hp = 100f;
+    [SerializeField] private float hp ;
 
     [SerializeField] private float cu;
     [SerializeField] private Image hpBar;
@@ -23,22 +23,22 @@ public class EnemyHealthController : MonoBehaviour
     }
     void Start()
     {
-
         Cu = Hp;
-        updateHp();      
-
+        updateHp();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+      
 
     }
 
     public void TakeDame(float dame)
     {
         Cu -= dame;
+        Debug.Log("Hit Boss: " + dame);
+        Debug.Log("Hit Boss: " + Cu);
        
         Cu = Mathf.Max(Cu, 0);
         updateHp();

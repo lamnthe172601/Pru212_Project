@@ -161,16 +161,7 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
             DropLoot(); 
        
-            float random = Random.value;
-
-            if (random <= coinDropRate && random > chestDropRate)
-            {
-                //LevelController.instance.SpawnExp(transform.position, experienceToGive);
-            }
-            else if (random <= chestDropRate)
-            {
-                //LevelController.instance.SpawnChest(transform.position);
-            }
+            
         }
 
     }
@@ -186,14 +177,5 @@ public class EnemyController : MonoBehaviour
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
     }
-    public void TakeDamage(float damageToTake, bool shouldKnockBack)
-    {
-        // Apply damage and check for knockback
-        TakeDamage(damageToTake);
-
-        if (shouldKnockBack == true)
-        {
-            knockBackCounter = knockBackTime;
-        }
-    }
+    
 }

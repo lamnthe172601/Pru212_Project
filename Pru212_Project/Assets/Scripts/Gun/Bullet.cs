@@ -22,14 +22,21 @@ public class Bullet : MonoBehaviour
         transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
     }
 
-    // Có thể thêm phương thức va chạm hoặc xử lý damage tùy theo yêu cầu của game
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Xử lý va chạm và damage ở đây, ví dụ: giảm máu kẻ thù
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") )
         {
-            Debug.Log("Hit enemy");
+          
             collision.gameObject.GetComponent<EnemyController>().TakeDamage(damage);
+            Destroy(gameObject);
+
+        }
+        // Xử lý va chạm và damage ở đây, ví dụ: giảm máu kẻ thù
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            Debug.Log("Hit Boss");
+            collision.gameObject.GetComponent<BossController>().TakeDamage(damage);
             Destroy(gameObject);
 
         }
