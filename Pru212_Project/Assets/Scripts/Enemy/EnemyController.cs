@@ -168,14 +168,17 @@ public class EnemyController : MonoBehaviour
 
     private void DropLoot()
     {
-        if (Random.value < 0.3f)
-        {
-            Instantiate(ExpPrefab, transform.position, Quaternion.identity);
-        } else       
-        if (Random.value < 0.1f)
+        float roll = Random.value; 
+
+        if (roll < 0.1f) 
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
+        else if (roll < 0.4f) 
+        {
+            Instantiate(ExpPrefab, transform.position, Quaternion.identity);
+        }
     }
-    
+
+
 }

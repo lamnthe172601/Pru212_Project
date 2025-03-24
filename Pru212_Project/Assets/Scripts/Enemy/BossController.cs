@@ -36,6 +36,10 @@ public class BossController : MonoBehaviour
     private Vector3 playerLastPosition;
     private EnemyHealthController enemyHealthController;
 
+    [SerializeField]
+    private float time_appears;
+
+
     void Start()
     {
         // Initialize components and find the player at the start
@@ -52,9 +56,9 @@ public class BossController : MonoBehaviour
         enemyHealthController = GetComponent<EnemyHealthController>();
         enemyHealthController.enabled = true;
         enemyHealthController.Hp = health;       
-        //enemyHealthController.Cu = health;
+
         gameObject.SetActive(false); // Ẩn boss ngay từ đầu
-        Invoke("EnableBoss", 0f); // Gọi hàm sau 5 phút
+        Invoke("EnableBoss", time_appears); // Gọi hàm sau 5 phút
 
     }
     void EnableBoss()
