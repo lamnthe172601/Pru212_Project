@@ -482,6 +482,7 @@ MonoBehaviour:
   healthPickupPrefab: {fileID: 785267415936688867, guid: 52944a37c8f8f0a4a8fb7b133eb25c7a, type: 3}
   deathEffect: {fileID: 4925807420024824091, guid: dace71131325fac4bad6bed148f3e1ee, type: 3}
   deathEffectDelay: 1
+  audioSource: {fileID: 8300000, guid: 47cc29d76e2cf53449325437ce8a7a88, type: 3}
 --- !u!114 &6813618336257589860
 MonoBehaviour:
   m_ObjectHideFlags: 0

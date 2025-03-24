@@ -44,6 +44,9 @@ public class EnemyController : MonoBehaviour
 
     public GameObject deathEffect;
     public float deathEffectDelay = 1f; // Thời gian hiệu ứng tồn tại trước khi bị hủy
+
+    [SerializeField] private AudioClip audioSource;
+
     void Start()
     {
         // Find the player in the scene and set it as the target
@@ -142,6 +145,13 @@ public class EnemyController : MonoBehaviour
         {
             isDefeated = true;
 
+            GameObject soundObject = new GameObject("DeathSound");
+            AudioSource source = soundObject.AddComponent<AudioSource>();
+            source.clip = audioSource;
+            source.pitch = 2.5f;
+            source.Play();
+            Destroy(soundObject, source.clip.length);
+            
             if (deathEffect != null)
             {
                 GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
