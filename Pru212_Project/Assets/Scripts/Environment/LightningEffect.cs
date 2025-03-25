@@ -7,11 +7,27 @@ public class LightningEffect : MonoBehaviour
     public float minDelay = 1f, maxDelay = 5f;
 
     private Camera mainCamera;
+    private Coroutine thunderCoroutine;
 
     private void Start()
     {
         mainCamera = Camera.main;
-        StartCoroutine(ThunderRoutine());
+    }
+
+    private void OnEnable()
+    {
+        // Start the thunder routine when the object is enabled
+        thunderCoroutine = StartCoroutine(ThunderRoutine());
+    }
+
+    private void OnDisable()
+    {
+        // Stop the coroutine when the object is disabled
+        if (thunderCoroutine != null)
+        {
+            StopCoroutine(thunderCoroutine);
+            thunderCoroutine = null;
+        }
     }
 
     private IEnumerator ThunderRoutine()
@@ -30,7 +46,7 @@ public class LightningEffect : MonoBehaviour
             Destroy(lightning, 1f); // Destroy after animation plays
         }
     }
-    
+
     private Vector2 GetRandomPositionInView()
     {
         float cameraHeight = 2f * mainCamera.orthographicSize;

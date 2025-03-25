@@ -19,7 +19,7 @@ TagManager:
   - Bullet
   - Gun
   - Enemy
-  - 
+  - Canvas
   - 
   - 
   - 
@@ -61,8 +61,14 @@ TagManager:
   - name: Gun
     uniqueID: 2901539383
     locked: 0
-  - name: Canvas
+  - name: Effects
+    uniqueID: 1109123327
+    locked: 0
+  - name: UI
     uniqueID: 4239511105
+    locked: 0
+  - name: Canvas
+    uniqueID: 2699654511
     locked: 0
   m_RenderingLayers:
   - Default
