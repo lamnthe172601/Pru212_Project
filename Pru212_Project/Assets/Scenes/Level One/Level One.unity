@@ -152,7 +152,7 @@ MonoBehaviour:
   rainParticleSystem: {fileID: 1252888970}
   rainHeight: 12
   xOffset: 5
-  followSmoothness: 0.05
+  followSmoothness: 0.01
 --- !u!4 &7030726
 Transform:
   m_ObjectHideFlags: 0
@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 1081717619}
-  rainEffect: {fileID: 1252888968}
+  rainEffect: {fileID: 1252888970}
   lightningEffect: {fileID: 626760732}
 --- !u!1 &515139122
 GameObject:
@@ -2605,7 +2605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000056028, y: 129.69}
+  m_AnchoredPosition: {x: -0.0000056028, y: 189.49}
   m_SizeDelta: {x: 132.8887, y: 39.6137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081717619
@@ -2907,7 +2907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &1252888969
 ParticleSystemRenderer:
   serializedVersion: 6
