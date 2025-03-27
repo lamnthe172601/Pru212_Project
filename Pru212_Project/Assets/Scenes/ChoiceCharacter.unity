@@ -1923,6 +1923,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3248458982697024345, guid: 4d4864c8f705a1347b531167956ff92b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248458982697024345, guid: 4d4864c8f705a1347b531167956ff92b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1673803573
+      objectReference: {fileID: 0}
     - target: {fileID: 5331980410017923401, guid: 4d4864c8f705a1347b531167956ff92b, type: 3}
       propertyPath: m_Name
       value: MaskDude
@@ -1995,6 +2003,14 @@ PrefabInstance:
     - target: {fileID: 2064745183955733632, guid: 8ebb858c7cb59fe469ab1565e5fe0fae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763210874560097844, guid: 8ebb858c7cb59fe469ab1565e5fe0fae, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763210874560097844, guid: 8ebb858c7cb59fe469ab1565e5fe0fae, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1673803573
       objectReference: {fileID: 0}
     - target: {fileID: 7021876662462972472, guid: 8ebb858c7cb59fe469ab1565e5fe0fae, type: 3}
       propertyPath: m_Name
@@ -2076,6 +2092,14 @@ PrefabInstance:
     - target: {fileID: 3375238447291434711, guid: f9e62baabfea27c4d80b5ff5cf9b328d, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550020946782226813, guid: f9e62baabfea27c4d80b5ff5cf9b328d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550020946782226813, guid: f9e62baabfea27c4d80b5ff5cf9b328d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1673803573
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -123,6 +123,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -359,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_0": 6212392107708065341
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_1": 7235491832154585913
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_2": -9206785454171975237
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_3": 5464052946349059895
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_4": -5805194097504879936
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_5": -3373270268102312132
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_6": -8332511545104494227
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_7": 4628204638646219559
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_8": 4927760925097044676
+      "\u2014Pngtree\u2014the fly twitch frame border_5994610_9": -6380873212299197903
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
