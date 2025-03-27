@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: 48e11474e167181418177d6c67988267
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6212392107708065341
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_0"
+  - first:
+      213: 7235491832154585913
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_1"
+  - first:
+      213: -9206785454171975237
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_2"
+  - first:
+      213: 5464052946349059895
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_3"
+  - first:
+      213: -5805194097504879936
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_4"
+  - first:
+      213: -3373270268102312132
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_5"
+  - first:
+      213: -8332511545104494227
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_6"
+  - first:
+      213: 4628204638646219559
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_7"
+  - first:
+      213: 4927760925097044676
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_8"
+  - first:
+      213: -6380873212299197903
+    second: "\u2014Pngtree\u2014the fly twitch frame border_5994610_9"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_0"
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 635
+        width: 43
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36216115b9d63650800000000000000
+      internalID: 6212392107708065341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_1"
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 985
+        width: 781
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b70de6c71a96460800000000000000
+      internalID: 7235491832154585913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_2"
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 635
+        width: 43
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb198d8b86dea3080800000000000000
+      internalID: -9206785454171975237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_3"
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 622
+        width: 386
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fef05743734db40800000000000000
+      internalID: 5464052946349059895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_4"
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 622
+        width: 386
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0caf60eb9becf6fa0800000000000000
+      internalID: -5805194097504879936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_5"
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 319
+        width: 459
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fff52409cbf21d0800000000000000
+      internalID: -3373270268102312132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_6"
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 469
+        width: 298
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d619433b5e8fc5c80800000000000000
+      internalID: -8332511545104494227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_7"
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 350
+        width: 282
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723b25af89faa3040800000000000000
+      internalID: 4628204638646219559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_8"
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 82
+        width: 348
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4caa576f37ce26440800000000000000
+      internalID: 4927760925097044676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014the fly twitch frame border_5994610_9"
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 80
+        width: 385
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132c918ee959277a0800000000000000
+      internalID: -6380873212299197903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -39,14 +40,48 @@ public class PlayerHealthController : MonoBehaviour
     public void TakeDame(float dame)
     {
         Cu -= dame;
-       
         Cu = Mathf.Max(Cu, 0);
         updateHp();
+
         if (Cu <= 0)
         {
-            Time.timeScale = 0;            
+            StartCoroutine(EliminateEnemiesBeforeGameOver());
         }
     }
+
+    private IEnumerator EliminateEnemiesBeforeGameOver()
+    {
+        // Stop the player's movement
+        GetComponent<PlayerMove>().enabled = false;
+
+        // Keep damaging enemies and boss until none remain
+        while (true)
+        {
+            EnemyController[] enemies = FindObjectsOfType<EnemyController>();
+            BossController[] bosses = FindObjectsOfType<BossController>();
+
+            if (enemies.Length == 0 && bosses.Length == 0)
+                break; // All enemies are dead, show game over
+
+            foreach (EnemyController enemy in enemies)
+            {
+                enemy.TakeDamage(1000f * Time.deltaTime);
+            }
+
+            foreach (BossController boss in bosses)
+            {
+                boss.TakeDamage(1000f * Time.deltaTime);
+            }
+
+            yield return null; // Wait for next frame
+        }
+
+        // Once all enemies are dead, show game over UI
+        UIController.instance.GameOver();
+        Time.timeScale = 0f; // Pause the game
+    }
+
+
     public void Heal(int amount)
     {
         Cu += amount;
