@@ -103,17 +103,15 @@ public class MoveGun : MonoBehaviour
     }
 
     // Tăng sát thương
-    public void IncreaseDamage()
+    public void IncreaseDamage(float dameUp)
     {
-        bulletDamage += 2f;
-        Debug.Log($"Tăng sát thương: {bulletDamage}");
+        bulletDamage += dameUp;
     }
 
     // Tăng số tia đạn
-    public void IncreaseBulletCount()
+    public void IncreaseBulletCount(int bulletCountUp)
     {
-        bulletCount++;
-        Debug.Log($"Tăng số tia đạn: {bulletCount}");
+        bulletCount += bulletCountUp;
     }
     
     //gọi âm thanh

@@ -1134,7 +1134,7 @@ MonoBehaviour:
   timer: 5
   secondTimer: 0.5
   thirdTimer: 2
-  time_appears: 30
+  time_appears: 10
 --- !u!50 &395499092
 Rigidbody2D:
   serializedVersion: 5
