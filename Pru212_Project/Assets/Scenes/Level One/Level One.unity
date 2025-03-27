@@ -15892,6 +15892,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3336175767595041832, guid: f207b0642e7a1a049a203f6af037888e, type: 3}
+      propertyPath: rainHeight
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336175767595041832, guid: f207b0642e7a1a049a203f6af037888e, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1370161141}
