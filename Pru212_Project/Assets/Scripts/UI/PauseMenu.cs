@@ -104,9 +104,18 @@ public class PauseMenu : MonoBehaviour
 
     public void RestartGame()
     {
+        // Tìm và hủy tất cả các đối tượng "Mini Boss Death Effect(Clone)"
+        GameObject[] deathEffects = GameObject.FindGameObjectsWithTag("DeathEffect");
+        foreach (GameObject effect in deathEffects)
+        {
+            Destroy(effect);
+        }
+
+        // Đặt lại thời gian và tải lại cảnh
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 
     public void QuitGame()
     {

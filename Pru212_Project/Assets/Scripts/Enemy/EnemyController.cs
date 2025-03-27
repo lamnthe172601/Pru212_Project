@@ -42,6 +42,8 @@ public class EnemyController : MonoBehaviour
     public GameObject deathEffect;
     public float deathEffectDelay = 1f; // Thời gian hiệu ứng tồn tại trước khi bị hủy
 
+    public float destroyDelay = 1f; // Thời gian hiệu ứng tồn tại trước khi bị hủy
+
     [SerializeField] private AudioClip audioSource;
 
     void Start()
@@ -165,15 +167,19 @@ public class EnemyController : MonoBehaviour
 
     private void DropLoot()
     {
-        float roll = Random.value; 
+        float roll = Random.value;
+     
 
-        if (roll < HealthDropRate) 
+        if (roll < HealthDropRate)
         {
-            Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+          
         }
-        else if (roll < ExpDropRate) 
+        else if (roll < ExpDropRate)
         {
             Instantiate(ExpPrefab, transform.position, Quaternion.identity);
+           
+            
         }
     }
 

@@ -649,7 +649,7 @@ RectTransform:
   m_GameObject: {fileID: 162972139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.69951, y: 0.69951, z: 0.69951}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1511106573}
@@ -657,7 +657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 212.37045, y: 75.50693}
+  m_AnchoredPosition: {x: 211.4, y: 98.4}
   m_SizeDelta: {x: 56.0591, y: 21.3862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &162972142
@@ -1427,7 +1427,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 395499092}
   spriteRenderer: {fileID: 395499094}
   deathEffect: {fileID: 3235277780342186300, guid: e8c18ec443633e547b537a1c31804075, type: 3}
-  health: 1000
+  health: 2000
   damage: 75
   moveSpeed: 2
   knockBackTime: 0.5
@@ -1435,7 +1435,7 @@ MonoBehaviour:
   timer: 5
   secondTimer: 0.5
   thirdTimer: 2
-  time_appears: 30
+  time_appears: 300
 --- !u!50 &395499092
 Rigidbody2D:
   serializedVersion: 5
@@ -1590,7 +1590,7 @@ Animator:
   m_GameObject: {fileID: 395499090}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9cc8749e3e747324b9f1e3225ebb0b55, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6138d9efd8445794785194c1ef801268, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4252,7 +4252,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RestartButton
+  m_Text: Restart
 --- !u!222 &1282060748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4454,7 +4454,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ResumeButton
+  m_Text: Resume
 --- !u!222 &1333440827
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5335,7 +5335,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QuitButton
+  m_Text: Quit
 --- !u!222 &1416882313
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6758,7 +6758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MuteButton
+  m_Text: Volume
 --- !u!222 &1774024518
 CanvasRenderer:
   m_ObjectHideFlags: 0

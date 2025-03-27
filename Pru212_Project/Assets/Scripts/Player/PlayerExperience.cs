@@ -20,6 +20,10 @@ public class PlayerExperience : MonoBehaviour
     private List<int> availableUpgrades = new List<int> { 1, 2, 3, 4 };
     private bool canClickUpgrade = false;
 
+    [SerializeField] private float  dameUp=2f;
+    [SerializeField] private float speedUp = 0.5f;
+    [SerializeField] private int bulletCountUp = 1;
+    [SerializeField] private float magnetChanceRate = 1f;
 
 
     public void GainXP(int amount)
@@ -113,16 +117,16 @@ public class PlayerExperience : MonoBehaviour
         switch (upgradeType)
         {
             case 1:
-                FindObjectOfType<MoveGun>().IncreaseDamage();
+                FindObjectOfType<MoveGun>().IncreaseDamage(dameUp);
                 break;
             case 2:
-                FindObjectOfType<MoveGun>().IncreaseBulletCount();
+                FindObjectOfType<MoveGun>().IncreaseBulletCount(bulletCountUp);
                 break;
             case 3:
-                FindObjectOfType<PlayerMove>().IncreaseMoveSpeed();
+                FindObjectOfType<PlayerMove>().IncreaseMoveSpeed(speedUp);
                 break;
             case 4:
-                FindObjectOfType<PlayerMove>().magnetChance += 0.5f;
+                FindObjectOfType<PlayerMove>().magnetChance += magnetChanceRate;
                 FindObjectOfType<PlayerMove>().ActivateMagnetChance();
                 break;
         }

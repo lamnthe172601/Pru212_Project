@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BossRun
+  m_Name: Run
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -22,11 +22,11 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 21300000, guid: 5581c5d545ec9974f8019fc06e850c89, type: 3}
-    - time: 0.28333333
+    - time: 0.16666667
       value: {fileID: 21300000, guid: bb7bd3e1ca75ccb4c82bc6f7eb0e7a27, type: 3}
-    - time: 0.5833333
+    - time: 0.33333334
       value: {fileID: 21300000, guid: 8e21054bb34968040a05b6b2a14ae60f, type: 3}
-    - time: 0.8666667
+    - time: 0.5
       value: {fileID: 21300000, guid: 6a963594fd87b894d8c8286613149eee, type: 3}
     attribute: m_Sprite
     path: 
@@ -59,7 +59,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8833333
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

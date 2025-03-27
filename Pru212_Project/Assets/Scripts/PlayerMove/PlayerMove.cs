@@ -46,10 +46,10 @@ public class PlayerMove : MonoBehaviour
     }
 
     // Tăng tốc độ chạy
-    public void IncreaseMoveSpeed()
+    public void IncreaseMoveSpeed(float speedUp)
     {
-        moveSpeed += 0.5f;
-        Debug.Log($"Tăng tốc độ chạy: {moveSpeed}");
+        moveSpeed += speedUp;
+       
     }
 
     // Kích hoạt hút Exp & Máu (xác suất 10%)
@@ -57,7 +57,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (magnetChance >= 1) 
         {
-            Debug.Log("Hút tất cả Exp & Máu!");
+         
             GameObject[] expAndHealthItems = GameObject.FindGameObjectsWithTag("Collectible");
             foreach (GameObject item in expAndHealthItems)
             {
