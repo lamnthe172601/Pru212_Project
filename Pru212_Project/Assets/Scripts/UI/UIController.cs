@@ -6,7 +6,6 @@ public class UIController : MonoBehaviour
     public static UIController instance;
 
     [Space(10)]
-    // UI elements for displaying time
     public TMP_Text timeText;
 
     public ParticleSystem rainEffect;

@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c1cee2df311f8143b14bad6e842abe1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   playerTransform: {fileID: 1370161141}
   rainParticleSystem: {fileID: 1252888970}
   rainHeight: 12
@@ -840,7 +840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletDamage
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
@@ -957,15 +957,15 @@ MonoBehaviour:
   rigidbody2d: {fileID: 395499092}
   spriteRenderer: {fileID: 395499094}
   deathEffect: {fileID: 3235277780342186300, guid: e8c18ec443633e547b537a1c31804075, type: 3}
-  health: 1500
+  health: 1000
   damage: 75
-  moveSpeed: 3
+  moveSpeed: 2
   knockBackTime: 0.5
   hitWaitTime: 0.5
   timer: 5
   secondTimer: 0.5
   thirdTimer: 2
-  time_appears: 180
+  time_appears: 300
 --- !u!50 &395499092
 Rigidbody2D:
   serializedVersion: 5
@@ -1103,8 +1103,8 @@ Transform:
   m_GameObject: {fileID: 395499090}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.028, y: -0.1407, z: 0}
-  m_LocalScale: {x: 1.4533637, y: 1.4086343, z: 3}
+  m_LocalPosition: {x: -8.23, y: 0.15, z: 0}
+  m_LocalScale: {x: 1.25139, y: 1.1502, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 198250834}
@@ -1349,10 +1349,6 @@ PrefabInstance:
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletSpeed
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
-      propertyPath: bulletDamage
-      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
@@ -1643,8 +1639,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -1660,8 +1656,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -1726,8 +1722,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5ab8550338744d4fa2f1e56b97f6bb1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   timeText: {fileID: 1081717619}
   rainEffect: {fileID: 1252888970}
   lightningEffect: {fileID: 626760732}
@@ -1962,8 +1958,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c1b45f99cd3414459e8b6a27b775638, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   lightningPrefab: {fileID: 8939907061170597820, guid: 4e185ae47e0f2bb4184ffafd749da197, type: 3}
   minDelay: 0
   maxDelay: 3
@@ -2010,8 +2006,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc00be044fcbda4ea8237950871f7e1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   tilemap: {fileID: 1547642917}
   randomTiles:
   - {fileID: 11400000, guid: cec55248b2122794090b1a5133b3e68a, type: 2}
@@ -2622,8 +2618,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2890,8 +2886,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad69864ab331e5345a23dbc1fb9ea709, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   shakeDuration: 0.1
   shakeAmount: 0.2
 --- !u!1 &1252888968
@@ -8298,90 +8294,33 @@ MonoBehaviour:
   - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
     waveLength: 15
     timeBetweenSpawns: 0.5
-  - enemyToSpawn: {fileID: 8666155330882386774, guid: f2b5cb09b88d2ad4f80210dfe9e7683d, type: 3}
-    waveLength: 5
-    timeBetweenSpawns: 0.5
   - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
-    waveLength: 10
+    waveLength: 14
+    timeBetweenSpawns: 0.5
+  - enemyToSpawn: {fileID: 8666155330882386774, guid: f2b5cb09b88d2ad4f80210dfe9e7683d, type: 3}
+    waveLength: 2
     timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 4009430275596746956, guid: 7d61fefe4608d0041b51263c9846a92f, type: 3}
+  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
     waveLength: 14
     timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 8169955904912276080, guid: 764f53f89d114b445a8f01f043b03c5b, type: 3}
-    waveLength: 10
-    timeBetweenSpawns: 0.3
   - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
-    waveLength: 10
+    waveLength: 15
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
+    waveLength: 14
     timeBetweenSpawns: 0.5
+  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
+    waveLength: 15
+    timeBetweenSpawns: 0.3
   - enemyToSpawn: {fileID: 8666155330882386774, guid: f2b5cb09b88d2ad4f80210dfe9e7683d, type: 3}
-    waveLength: 10
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 1620642803414953063, guid: 1fdd8d985c53760428aa5a2e0aa7217c, type: 3}
-    waveLength: 7
+    waveLength: 5
     timeBetweenSpawns: 0.15
-  - enemyToSpawn: {fileID: 8169955904912276080, guid: 764f53f89d114b445a8f01f043b03c5b, type: 3}
-    waveLength: 12
+  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
+    waveLength: 15
     timeBetweenSpawns: 0.5
-  - enemyToSpawn: {fileID: 1926469503956558523, guid: 762f4a273f94c304facc9037a49a40c0, type: 3}
-    waveLength: 7
+  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
+    waveLength: 15
     timeBetweenSpawns: 0.5
-  - enemyToSpawn: {fileID: 2285659488728335873, guid: 92d1ed8fc8b57124d82ee1e4e9a77cc9, type: 3}
-    waveLength: 3
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6047848262895898133, guid: 6e1cce0987d6f9e439113082839fd8d3, type: 3}
-    waveLength: 30
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 4009430275596746956, guid: 7d61fefe4608d0041b51263c9846a92f, type: 3}
-    waveLength: 10
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
-    waveLength: 5
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 4357968560266941846, guid: 92326d2bda427dd47b458dc89b959089, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
-    waveLength: 20
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 2285659488728335873, guid: 92d1ed8fc8b57124d82ee1e4e9a77cc9, type: 3}
-    waveLength: 10
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 8169955904912276080, guid: 764f53f89d114b445a8f01f043b03c5b, type: 3}
-    waveLength: 10
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6047848262895898133, guid: 6e1cce0987d6f9e439113082839fd8d3, type: 3}
-    waveLength: 10
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 4357968560266941846, guid: 92326d2bda427dd47b458dc89b959089, type: 3}
-    waveLength: 20
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 1926469503956558523, guid: 762f4a273f94c304facc9037a49a40c0, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 1620642803414953063, guid: 1fdd8d985c53760428aa5a2e0aa7217c, type: 3}
-    waveLength: 5
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 4009430275596746956, guid: 7d61fefe4608d0041b51263c9846a92f, type: 3}
-    waveLength: 30
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 2285659488728335873, guid: 92d1ed8fc8b57124d82ee1e4e9a77cc9, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 4357968560266941846, guid: 92326d2bda427dd47b458dc89b959089, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
   - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
     waveLength: 30
     timeBetweenSpawns: 0.3
@@ -16335,7 +16274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletDamage
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3156242444198250865, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: bulletPrefabs
