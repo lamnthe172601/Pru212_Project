@@ -3,8 +3,8 @@ using UnityEngine.TextCore.Text;
 
 public class ChangeInstancePlayer : MonoBehaviour
 {
-    public GameObject characterY; 
-
+    public GameObject characterY;
+    public float scaleRate = 0.65f;
     void Start()
     {
         if (CharacterSelected.selectedCharacter != null)
@@ -29,7 +29,7 @@ public class ChangeInstancePlayer : MonoBehaviour
                 yAnimator.runtimeAnimatorController = selectedAnimator.runtimeAnimatorController;
             }
 
-            characterY.transform.localScale = selectedClone.transform.localScale;
+            characterY.transform.localScale = selectedClone.transform.localScale* scaleRate;
             characterY.name = selectedClone.name;
             Destroy(selectedClone);
         }
