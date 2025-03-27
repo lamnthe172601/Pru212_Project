@@ -47,12 +47,6 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private AudioClip audioSource;
 
-    [SerializeField]
-    private float rateHealth = 0.1f;
-    [SerializeField]
-    private float rateExp = 0.5f;
-
-
     void Start()
     {
         // Find the player in the scene and set it as the target
@@ -176,11 +170,11 @@ public class EnemyController : MonoBehaviour
     {
         float roll = Random.value; 
 
-        if (roll < rateHealth) 
+        if (roll < 0.1f) 
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
-        else if (roll < rateExp) 
+        else if (roll < 0.4f) 
         {
             Instantiate(ExpPrefab, transform.position, Quaternion.identity);
         }

@@ -26,15 +26,19 @@ public class RandomTilemapGenerator : MonoBehaviour
 
     void GenerateTilemap()
     {
-        // Loop through the entire tilemap.
-        for (int x = 0; x < width; x++)
+        // Get the camera position in world space
+        Vector3 camPos = Camera.main.transform.position;
+
+        // Convert to integer grid coordinates
+        int startX = Mathf.FloorToInt(camPos.x) - (width / 2);
+        int startY = Mathf.FloorToInt(camPos.y) - (height / 2);
+
+        for (int x = startX; x < startX + width; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = startY; y < startY + height; y++)
             {
-                // Check if any neighboring tiles are already occupied.
                 bool occupiedNeighbor = CheckOccupiedNeighbors(x, y);
 
-                // If no neighboring tiles are occupied and random value permits, place random tile.
                 if (!occupiedNeighbor && Random.value < randomTileFrequency)
                 {
                     TileBase randomTile = randomTiles[Random.Range(0, randomTiles.Length)];
@@ -43,6 +47,7 @@ public class RandomTilemapGenerator : MonoBehaviour
             }
         }
     }
+
 
     // Method to check if any neighboring tiles are occupied.
     bool CheckOccupiedNeighbors(int x, int y)

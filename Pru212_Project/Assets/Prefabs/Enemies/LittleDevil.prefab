@@ -470,9 +470,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody2d: {fileID: 2981296281505226987}
   spriteRenderer: {fileID: 3516244700303255592}
-  health: 100
-  moveSpeed: 3
-  damage: 20
+  health: 12
+  moveSpeed: 2
+  damage: 5
   hitWaitTime: 0.5
   knockBackTime: 0.5
   experienceToGive: 1
