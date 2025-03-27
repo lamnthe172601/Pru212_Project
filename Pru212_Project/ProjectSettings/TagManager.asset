@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Collectible
   - Boss
+  - DeathEffect
   layers:
   - Default
   - TransparentFX

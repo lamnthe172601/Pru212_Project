@@ -7,7 +7,7 @@ public class ExpPickup : MonoBehaviour
 
     private void Start()
     {
-      
+      Destroy(gameObject,30);
     }
 
     private void Update()
