@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -104,22 +105,35 @@ public class PauseMenu : MonoBehaviour
 
     public void RestartGame()
     {
-        // Tìm và hủy tất cả các đối tượng "Mini Boss Death Effect(Clone)"
-        GameObject[] deathEffects = GameObject.FindGameObjectsWithTag("DeathEffect");
-        foreach (GameObject effect in deathEffects)
-        {
-            Destroy(effect);
-        }
-
-        // Đặt lại thời gian và tải lại cảnh
+        ClearEnemies(); // Destroy all enemies and bosses before restarting
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 
 
     public void QuitGame()
     {
-        SceneManager.LoadScene("ChoiceCharacter"); 
+        ClearEnemies(); // Destroy all enemies and bosses before switching scenes
+        SceneManager.LoadScene("MainStory");
         Time.timeScale = 1f;
     }
+
+
+    private void ClearEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] bosses = GameObject.FindGameObjectsWithTag("Boss");
+
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+        }
+
+        foreach (GameObject boss in bosses)
+        {
+            Destroy(boss);
+        }
+    }
+
 }

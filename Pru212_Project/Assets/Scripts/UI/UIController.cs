@@ -15,6 +15,8 @@ public class UIController : MonoBehaviour
     public GameObject gameOverUI;
     public TMP_Text timeSurvivedText;
 
+    public GameObject pausePanel; // Reference to the pause panel
+
     private void Awake()
     {
         instance = this;
@@ -23,14 +25,13 @@ public class UIController : MonoBehaviour
     void Start()
     {
         gameOverUI.SetActive(false);
-        CleanupDeathEffects(); // Clean up leftover effects from previous plays
+        if (pausePanel != null) pausePanel.SetActive(true); // Ensure it's hidden at start
+        CleanupDeathEffects();
     }
-
 
     private void Update()
     {
         float time = Time.timeSinceLevelLoad;
-
         UpdateTimer(time);
 
         bool isEffectActive = Mathf.FloorToInt(time) % 20 >= 10;
@@ -69,11 +70,16 @@ public class UIController : MonoBehaviour
     {
         gameOverUI.SetActive(true);
 
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false); // Disable pause panel
+        }
+
         int minutes = Mathf.FloorToInt(Time.timeSinceLevelLoad / 60);
         int seconds = Mathf.FloorToInt(Time.timeSinceLevelLoad % 60);
         timeSurvivedText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        CleanupDeathEffects(); // Ensure all death effects are destroyed
+        CleanupDeathEffects();
 
         Time.timeScale = 0f;
     }
@@ -86,7 +92,6 @@ public class UIController : MonoBehaviour
             Destroy(effect);
         }
     }
-
 
     public void Title()
     {
@@ -102,7 +107,7 @@ public class UIController : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainStory");
     }
 
     void OnDestroy()
@@ -112,5 +117,4 @@ public class UIController : MonoBehaviour
             Destroy(effect);
         }
     }
-
 }

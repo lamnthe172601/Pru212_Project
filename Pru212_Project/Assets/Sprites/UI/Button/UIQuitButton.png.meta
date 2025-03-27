@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UIQuitButton_0: 1949685923174967113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

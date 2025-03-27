@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 123318ab9dd2e524a9b17953f3192888
+guid: 6a0a5fd1d72265d45a871548196d0e80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8369263542556715765
-    second: UIQuitButtonPressed_0
+      213: -938517521779619541
+    second: ip77c5qbxkd91_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UIQuitButtonPressed_0
+      name: ip77c5qbxkd91_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 350
-        height: 118
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fa68b589d8952470800000000000000
-      internalID: 8369263542556715765
+      spriteID: b2988d25947b9f2f0800000000000000
+      internalID: -938517521779619541
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      UIQuitButtonPressed_0: 8369263542556715765
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
