@@ -48,6 +48,7 @@ public class CharacterSelected : MonoBehaviour
     public void OnPlayClick()
     {
         SceneManager.LoadScene("Level One");
+        Time.timeScale = 1f;
     }
     public void NextPreBtnClick()
     {

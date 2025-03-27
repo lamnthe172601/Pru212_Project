@@ -102,22 +102,24 @@ public class BossController : MonoBehaviour
 
     public void TakeDamage(float damageToTake)
     {
-        // Reduce boss health by the damage taken
+        // Reduce health
         health -= damageToTake;
         enemyHealthController.TakeDame(damageToTake);
-      
-        // Check for boss death and handle accordingly
+
+        // If health is depleted
         if (health <= 0)
         {
-
+            // Spawn death effect
             GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 3f); // Hủy hiệu ứng sau 3 giây
+            Destroy(effect, 3f); // Ensure effect is destroyed after 3 seconds
 
-            Destroy(gameObject);
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
             CameraShake.instance.ShakeIt(1f, 0.2f);
+
+            // Delay boss destruction slightly to ensure effect spawns properly
+            Destroy(gameObject, 0.1f);
         }
     }
+
 
     // Overloaded method to take damage with optional knockback
     //public void TakeDamage(float damageToTake, bool shouldKnockBack)

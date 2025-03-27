@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -11,10 +12,20 @@ public class UIController : MonoBehaviour
     public ParticleSystem rainEffect;
     public GameObject lightningEffect;
 
+    public GameObject gameOverUI;
+    public TMP_Text timeSurvivedText;
+
     private void Awake()
     {
         instance = this;
     }
+
+    void Start()
+    {
+        gameOverUI.SetActive(false);
+        CleanupDeathEffects(); // Clean up leftover effects from previous plays
+    }
+
 
     private void Update()
     {
@@ -53,4 +64,53 @@ public class UIController : MonoBehaviour
             lightningEffect.SetActive(state);
         }
     }
+
+    public void GameOver()
+    {
+        gameOverUI.SetActive(true);
+
+        int minutes = Mathf.FloorToInt(Time.timeSinceLevelLoad / 60);
+        int seconds = Mathf.FloorToInt(Time.timeSinceLevelLoad % 60);
+        timeSurvivedText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        CleanupDeathEffects(); // Ensure all death effects are destroyed
+
+        Time.timeScale = 0f;
+    }
+
+    private void CleanupDeathEffects()
+    {
+        GameObject[] effects = GameObject.FindGameObjectsWithTag("DeathEffect");
+        foreach (GameObject effect in effects)
+        {
+            Destroy(effect);
+        }
+    }
+
+
+    public void Title()
+    {
+        SceneManager.LoadScene("TitleScreen");
+        Time.timeScale = 1.0f;
+    }
+
+    public void Restart()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    void OnDestroy()
+    {
+        foreach (GameObject effect in GameObject.FindGameObjectsWithTag("DeathEffect"))
+        {
+            Destroy(effect);
+        }
+    }
+
 }
