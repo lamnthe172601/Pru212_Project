@@ -772,11 +772,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.z
@@ -908,7 +908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8462033386147760433, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1280,23 +1280,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 0.781725
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.651394
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 0.781725
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.18883
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.031028
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2598,14 +2598,14 @@ RectTransform:
   m_GameObject: {fileID: 1081717617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.69064, y: 0.69064, z: 0.69064}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 502296932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000056028, y: 189.49}
+  m_AnchoredPosition: {x: -5, y: 148}
   m_SizeDelta: {x: 132.8887, y: 39.6137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081717619
@@ -8221,6 +8221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterY: {fileID: 1370161140}
+  scaleRate: 0.65
 --- !u!114 &1370161151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8294,33 +8295,90 @@ MonoBehaviour:
   - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
     waveLength: 15
     timeBetweenSpawns: 0.5
-  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
-    waveLength: 14
-    timeBetweenSpawns: 0.5
-  - enemyToSpawn: {fileID: 8666155330882386774, guid: f2b5cb09b88d2ad4f80210dfe9e7683d, type: 3}
-    waveLength: 2
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
-    waveLength: 14
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
-  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
-    waveLength: 14
-    timeBetweenSpawns: 0.5
-  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
-    waveLength: 15
-    timeBetweenSpawns: 0.3
   - enemyToSpawn: {fileID: 8666155330882386774, guid: f2b5cb09b88d2ad4f80210dfe9e7683d, type: 3}
     waveLength: 5
+    timeBetweenSpawns: 0.5
+  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 4009430275596746956, guid: 7d61fefe4608d0041b51263c9846a92f, type: 3}
+    waveLength: 14
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 8169955904912276080, guid: 764f53f89d114b445a8f01f043b03c5b, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 1491496393951967596, guid: 101a08c215bba1b45bf1552e31dfdec7, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.5
+  - enemyToSpawn: {fileID: 8666155330882386774, guid: f2b5cb09b88d2ad4f80210dfe9e7683d, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 1620642803414953063, guid: 1fdd8d985c53760428aa5a2e0aa7217c, type: 3}
+    waveLength: 7
     timeBetweenSpawns: 0.15
+  - enemyToSpawn: {fileID: 8169955904912276080, guid: 764f53f89d114b445a8f01f043b03c5b, type: 3}
+    waveLength: 12
+    timeBetweenSpawns: 0.5
+  - enemyToSpawn: {fileID: 1926469503956558523, guid: 762f4a273f94c304facc9037a49a40c0, type: 3}
+    waveLength: 7
+    timeBetweenSpawns: 0.5
+  - enemyToSpawn: {fileID: 2285659488728335873, guid: 92d1ed8fc8b57124d82ee1e4e9a77cc9, type: 3}
+    waveLength: 3
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 6047848262895898133, guid: 6e1cce0987d6f9e439113082839fd8d3, type: 3}
+    waveLength: 30
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
+    waveLength: 15
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 4009430275596746956, guid: 7d61fefe4608d0041b51263c9846a92f, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
+    waveLength: 5
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 4357968560266941846, guid: 92326d2bda427dd47b458dc89b959089, type: 3}
+    waveLength: 15
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
+    waveLength: 20
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 2285659488728335873, guid: 92d1ed8fc8b57124d82ee1e4e9a77cc9, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 8169955904912276080, guid: 764f53f89d114b445a8f01f043b03c5b, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 6047848262895898133, guid: 6e1cce0987d6f9e439113082839fd8d3, type: 3}
+    waveLength: 10
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 4357968560266941846, guid: 92326d2bda427dd47b458dc89b959089, type: 3}
+    waveLength: 20
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 1926469503956558523, guid: 762f4a273f94c304facc9037a49a40c0, type: 3}
+    waveLength: 15
+    timeBetweenSpawns: 0.3
   - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
     waveLength: 15
-    timeBetweenSpawns: 0.5
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 1620642803414953063, guid: 1fdd8d985c53760428aa5a2e0aa7217c, type: 3}
+    waveLength: 5
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 4009430275596746956, guid: 7d61fefe4608d0041b51263c9846a92f, type: 3}
+    waveLength: 30
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 2285659488728335873, guid: 92d1ed8fc8b57124d82ee1e4e9a77cc9, type: 3}
+    waveLength: 15
+    timeBetweenSpawns: 0.3
   - enemyToSpawn: {fileID: 6397845847766629068, guid: 660bec0495a4b50419e12b89c73fe497, type: 3}
     waveLength: 15
-    timeBetweenSpawns: 0.5
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 4357968560266941846, guid: 92326d2bda427dd47b458dc89b959089, type: 3}
+    waveLength: 15
+    timeBetweenSpawns: 0.3
+  - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
+    waveLength: 15
+    timeBetweenSpawns: 0.3
   - enemyToSpawn: {fileID: 6047351715432772070, guid: 9878ffcaacfe56840b22f703fc161103, type: 3}
     waveLength: 30
     timeBetweenSpawns: 0.3
@@ -16202,11 +16260,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1134792642443155567, guid: 3ccbfe17707a56743960782231c11cae, type: 3}
       propertyPath: m_LocalScale.z
