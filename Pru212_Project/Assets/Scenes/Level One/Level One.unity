@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7030726}
   - component: {fileID: 7030725}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RainSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1689,7 +1689,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -55456191
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &502296932
@@ -1941,7 +1941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626760734}
   - component: {fileID: 626760733}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: LightningSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1989,7 +1989,7 @@ GameObject:
   - component: {fileID: 703047486}
   - component: {fileID: 703047485}
   - component: {fileID: 703047484}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2901,7 +2901,7 @@ GameObject:
   - component: {fileID: 1252888971}
   - component: {fileID: 1252888970}
   - component: {fileID: 1252888969}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RainEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8503,7 +8503,7 @@ GameObject:
   - component: {fileID: 1547642919}
   - component: {fileID: 1547642917}
   - component: {fileID: 1547642918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomTileMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9334,7 +9334,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -55456191
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1803189895
@@ -9447,6 +9447,10 @@ PrefabInstance:
     - target: {fileID: 1748836701560625827, guid: 9357e972a2e65db4eb53ce6f56d5f4f9, type: 3}
       propertyPath: m_SortingLayerID
       value: -1262892991
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505145684563242289, guid: 9357e972a2e65db4eb53ce6f56d5f4f9, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4455457658920428037, guid: 9357e972a2e65db4eb53ce6f56d5f4f9, type: 3}
       propertyPath: target
@@ -15983,6 +15987,10 @@ PrefabInstance:
     - target: {fileID: 6697624695057152522, guid: 9357e972a2e65db4eb53ce6f56d5f4f9, type: 3}
       propertyPath: m_Name
       value: EnvironmentGrid
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697624695057152522, guid: 9357e972a2e65db4eb53ce6f56d5f4f9, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8903968275528745639, guid: 9357e972a2e65db4eb53ce6f56d5f4f9, type: 3}
       propertyPath: m_LocalPosition.x

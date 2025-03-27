@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
 
     private void Update()
     {
-        float time = Time.time;
+        float time = Time.timeSinceLevelLoad;
 
         UpdateTimer(time);
 
