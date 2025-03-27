@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1825888687089683166}
   - component: {fileID: 3432493778936932902}
   - component: {fileID: 7097798252606333437}
-  - component: {fileID: 2742644605160962265}
+  - component: {fileID: 4518539692137205722}
   m_Layer: 9
   m_Name: Lightning_3
   m_TagString: Untagged
@@ -176,7 +176,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &2742644605160962265
+--- !u!114 &4518539692137205722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Player\ChangeInstancePlayer.cs" />
     <Compile Include="Assets\Scripts\UI\LeaderboardManager.cs" />
     <Compile Include="Assets\Scripts\Health\EnemyHealthController.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\UI\UIController.cs" />
     <Compile Include="Assets\CharacterSelected.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraShake.cs" />
