@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1370161141}
-  rainParticleSystem: {fileID: 1252888970}
+  rainParticleSystem: {fileID: 0}
   rainHeight: 12
   xOffset: 5
   followSmoothness: 0.01
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   timer: 5
   secondTimer: 0.5
   thirdTimer: 2
-  time_appears: 300
+  time_appears: 30
 --- !u!50 &395499092
 Rigidbody2D:
   serializedVersion: 5
@@ -1973,8 +1973,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 1081717619}
-  rainEffect: {fileID: 1252888970}
-  lightningEffect: {fileID: 626760732}
+  rainEffect: {fileID: 0}
+  lightningEffect: {fileID: 0}
 --- !u!1 &515139122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,7 +3312,6 @@ GameObject:
   - component: {fileID: 1110856226}
   - component: {fileID: 1110856229}
   - component: {fileID: 1110856230}
-  - component: {fileID: 1110856231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4108,7 +4107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterY: {fileID: 1370161140}
-  scalePlayer: 0.65
+  scaleRate: 0.65
 --- !u!114 &1370161151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4849,7 +4848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 703047486}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1566117287
 GameObject:
@@ -13092,9 +13091,6 @@ SceneRoots:
   - {fileID: 1370161141}
   - {fileID: 727396091}
   - {fileID: 2000024872}
-  - {fileID: 703047486}
-  - {fileID: 1252888971}
-  - {fileID: 626760734}
   - {fileID: 7030726}
   - {fileID: 502296932}
   - {fileID: 1803189895}
@@ -13102,3 +13098,4 @@ SceneRoots:
   - {fileID: 1746503318}
   - {fileID: 395499095}
   - {fileID: 1784028758}
+  - {fileID: 1547642919}
