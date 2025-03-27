@@ -121,7 +121,7 @@ public class MoveGun : MonoBehaviour
     {
         if (clip != null)
         {
-            audioSource.PlayOneShot(clip);
+            audioSource.PlayOneShot(clip, 0.3f);
         }
     }
 }
