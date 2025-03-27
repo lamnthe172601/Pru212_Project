@@ -1134,7 +1134,7 @@ MonoBehaviour:
   timer: 5
   secondTimer: 0.5
   thirdTimer: 2
-  time_appears: 300
+  time_appears: 30
 --- !u!50 &395499092
 Rigidbody2D:
   serializedVersion: 5
@@ -8145,7 +8145,6 @@ GameObject:
   - component: {fileID: 1110856226}
   - component: {fileID: 1110856229}
   - component: {fileID: 1110856230}
-  - component: {fileID: 1110856231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera

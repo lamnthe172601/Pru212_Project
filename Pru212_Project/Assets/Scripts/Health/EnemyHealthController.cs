@@ -37,9 +37,6 @@ public class EnemyHealthController : MonoBehaviour
     public void TakeDame(float dame)
     {
         Cu -= dame;
-        Debug.Log("Hit Boss: " + dame);
-        Debug.Log("Hit Boss: " + Cu);
-       
         Cu = Mathf.Max(Cu, 0);
         updateHp();
        

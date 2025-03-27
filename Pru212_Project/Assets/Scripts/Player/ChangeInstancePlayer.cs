@@ -33,6 +33,5 @@ public class ChangeInstancePlayer : MonoBehaviour
             characterY.name = selectedClone.name;
             Destroy(selectedClone);
         }
-        Debug.Log(characterY.name);
     }
 }
