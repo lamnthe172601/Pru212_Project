@@ -20,13 +20,11 @@ public class EnemyController : MonoBehaviour
     // Duration of the knockback effect when hit
     public float knockBackTime = .5f;
 
-    [Space(10)]
-    // Amount of experience given to the player upon defeat
-    public int experienceToGive = 1;
+   
     // Probability of dropping a coin upon death
-    public float coinDropRate = 0.5f;
-    // Probability of dropping a chest upon death
-    private float chestDropRate = 0.001f;
+    public float ExpDropRate = 0.5f;
+    public float HealthDropRate = 0.1f;
+
 
     // Timer to manage hit frequency
     private float hitCounter;
@@ -36,7 +34,6 @@ public class EnemyController : MonoBehaviour
     private Transform target;
 
     private bool isDefeated = false;
-    public int xpDrop = 5;
     public GameObject ExpPrefab;
     public GameObject healthPickupPrefab;
 
@@ -170,11 +167,11 @@ public class EnemyController : MonoBehaviour
     {
         float roll = Random.value; 
 
-        if (roll < 0.1f) 
+        if (roll < HealthDropRate) 
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
-        else if (roll < 0.4f) 
+        else if (roll < ExpDropRate) 
         {
             Instantiate(ExpPrefab, transform.position, Quaternion.identity);
         }
