@@ -5818,7 +5818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae7b420577db1b24594a635c4c34b84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 6
   magnetChance: 0
 --- !u!95 &1370161146
 Animator:
